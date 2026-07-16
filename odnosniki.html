@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomocne odnośniki - Trzema Słowami</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+            color: #333333;
+            line-height: 1.6;
+            padding: 30px 20px;
+        }
+
+        .header-section {
+            max-width: 1200px;
+            margin: 0 auto 30px auto;
+            text-align: center;
+        }
+
+        .header-section h1 {
+            color: #2c3e50;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .header-section p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        /* Układ kafelkowy (Grid) */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Styl pojedynczego kafelka */
+        .card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            border-top: 4px solid #2c3e50; /* Akcent kolorystyczny z menu */
+        }
+
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        .card-content h2 {
+            color: #2c3e50;
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+        }
+
+        .card-content p {
+            color: #555555;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        /* Przycisk otwierający mapę */
+        .btn-open {
+            display: inline-block;
+            text-align: center;
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .btn-open:hover {
+            background-color: #34495e;
+        }
+
+        /* Responsywność */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .header-section h1 {
+                font-size: 1.6rem;
+            }
+
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <h1>Niezbędnik Dyspozytora</h1>
+        <p>Szybki dostęp do zewnętrznych serwisów mapowych i lokalizacyjnych. Wszystkie odnośniki otwierają się w nowej karcie.</p>
+    </div>
+
+    <div class="grid-container">
+
+        <!-- 1. WHAT3WORDS -->
+        <div class="card">
+            <div class="card-content">
+                <h2>what3words</h2>
+                <p>Innowacyjny system kodowania współrzędnych GPS. Dzieli świat na kwadraty 3x3 metry i przypisuje im unikalny adres składający się z trzech słów. Niezastąpiony przy lokalizacji w terenie bezadresowym.</p>
+            </div>
+            <a href="https://what3words.com/" target="_blank" class="btn-open">Otwórz what3words</a>
+        </div>
+
+        <!-- 2. GOOGLE MAPS -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Google Maps</h2>
+                <p>Najbardziej uniwersalna komercyjna mapa. Oferuje kluczową funkcję Street View do wizualnej weryfikacji punktów charakterystycznych (kolor elewacji, ogrodzenie) oraz najbardziej precyzyjny podgląd aktualnego natężenia ruchu drogowego.</p>
+            </div>
+            <a href="https://www.google.com/maps" target="_blank" class="btn-open">Otwórz Google Maps</a>
+        </div>
+
+        <!-- 3. APPLE MAPS -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Apple Maps (Web)</h2>
+                <p>Przydatne narzędzie do weryfikacji lokalizacji przesyłanych bezpośrednio przez użytkowników urządzeń z systemem iOS (iPhone, iPad). Czasami oferuje inne, bardziej aktualne zdjęcia satelitarne niż Google.</p>
+            </div>
+            <a href="https://beta.maps.apple.com/" target="_blank" class="btn-open">Otwórz Apple Maps</a>
+        </div>
+
+        <!-- 4. MAPY.CZ -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Mapy.cz</h2>
+                <p>Jedna z najlepszych darmowych map turystycznych i topograficznych. Posiada świetnie odwzorowane szlaki turystyczne, ścieżki leśne oraz ukształtowanie terenu. Niezwykle pomocna w ratownictwie górskim i nizinnym.</p>
+            </div>
+            <a href="https://mapy.cz/" target="_blank" class="btn-open">Otwórz Mapy.cz</a>
+        </div>
+
+        <!-- 5. WIKIMAPIA -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Wikimapia</h2>
+                <p>Otwarte, współtworzone przez społeczność źródło mapowe. Zawiera opisy miejsc, obiektów przemysłowych, dawnych fabryk, lasów czy lokalnych, potocznych nazw, których nie znajdziesz na oficjalnych mapach administracyjnych.</p>
+            </div>
+            <a href="https://wikimapia.org/" target="_blank" class="btn-open">Otwórz Wikimapię</a>
+        </div>
+
+        <!-- 6. GEOPORTAL KRAJOWY (PROPOZYCJA 1) -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Geoportal Krajowy</h2>
+                <p>Oficjalny, rządowy serwis mapowy GUGiK. Kluczowy do sprawdzania numerów działek ewidencyjnych (katastralnych), precyzyjnych granic administracyjnych oraz przeglądania bardzo szczegółowych ortofotomap lotniczych.</p>
+            </div>
+            <a href="https://mapy.geoportal.gov.pl/" target="_blank" class="btn-open">Otwórz Geoportal</a>
+        </div>
+
+        <!-- 7. BANK DANYCH O LASACH - BDL (PROPOZYCJA 2) -->
+        <div class="card">
+            <div class="card-content">
+                <h2>Bank Danych o Lasach (BDL)</h2>
+                <p>Oficjalna mapa Lasów Państwowych. Umożliwia precyzyjną lokalizację zgłaszającego na podstawie tzw. adresu leśnego lub numeru oddziału leśnego (odczytanego np. ze słupka oddziałowego w głębi lasu).</p>
+            </div>
+            <a href="https://www.bdl.lasy.gov.pl/portal/mapy" target="_blank" class="btn-open">Otwórz mapę BDL</a>
+        </div>
+
+        <!-- 8. OPENSTREETMAP - OSM (PROPOZYCJA 3) -->
+        <div class="card">
+            <div class="card-content">
+                <h2>OpenStreetMap (OSM)</h2>
+                <p>Darmowa, otwarta mapa tworzona na bieżąco przez użytkowników na całym świecie. Często wyprzedza komercyjnych gigantów w nanoszeniu nowych budynków, dróg pożarowych, ścieżek pieszych i rzadkich numerów adresowych.</p>
+            </div>
+            <a href="https://www.openstreetmap.org/" target="_blank" class="btn-open">Otwórz OpenStreetMap</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
