@@ -1,1 +1,125 @@
-' Tu znajdzie się opis projektu i link do formularza kontaktowego
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O projekcie - Trzema Słowami</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa; /* Delikatne, jasne tło pasujące do ciemnego menu */
+            color: #333333;
+            line-height: 1.6;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); /* Subtelny cień nadający nowoczesny wygląd */
+        }
+
+        h1 {
+            color: #2c3e50; /* Kolor spójny z belką menu */
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #34495e; /* Akcent w kolorze hovera z menu */
+            padding-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #4f5f6f;
+            text-align: justify;
+        }
+
+        /* Sekcja kontaktu */
+        .contact-section {
+            margin-top: 40px;
+            padding-top: 25px;
+            border-top: 1px solid #e1e8ed;
+            text-align: center;
+        }
+
+        .contact-section p {
+            text-align: center;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        /* Przycisk kontaktu spójny z kolorystyką menu */
+        .btn-contact {
+            display: inline-block;
+            background-color: #2c3e50;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 12px 30px;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn-contact:hover {
+            background-color: #34495e; /* Efekt hover tożsamy z menu głównym */
+            transform: translateY(-2px); /* Delikatne uniesienie przycisku przy najechaniu */
+        }
+
+        /* Responsywność dla urządzeń mobilnych */
+        @media (max-width: 768px) {
+            body {
+                padding: 20px 10px;
+            }
+
+            .container {
+                padding: 25px 20px;
+            }
+
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>O projekcie „Trzema Słowami”</h1>
+
+        <!-- 1. MIEJSCE NA AKAPIT PIERWSZY -->
+        <p>
+          Projekt Trzema Słowami powstał z myślą o ułatwieniu pracy dyspozytorów medycznych oraz skróceniu czasu dotarcia służb ratunkowych na miejsce zdarzenia, z wykorzystaniem innowacyjnego pomysłu wykorzystywanego przez serwis <a href="https://what3words.com/" target=_blank>what3words.com</a>. Wykorzystując innowacyjny system kodowania współrzędnych geograficznych za pomocą trzech unikalnych słów, narzędzie pozwala na błyskawiczne i bezbłędne zlokalizowanie poszkodowanego – nawet w trudnym terenie leśnym, na autostradzie czy w gęstej zabudowie miejskiej, gdzie tradycyjne adresy zawodzą.
+        </p>
+
+        <!-- 1. MIEJSCE NA AKAPIT DRUGI -->
+        <p>
+Przed zadysponowaniem właściwej pomocy konieczne jest także precyzyjne określenie miejsca zdarzenia, zwłaszcza w nieoczywistych lokalizacjach typu tereny leśne, górskie, miejsca dużej budowy, itp. W odpowiedzi na ten problem przedstawiamy również serwis <a href="https://wikimapia.org/" target=_blank>Wikimapia</a>a></a>, często będący nieocenionym wsparciem w bardziej skomplikowanych przypadkach.
+                                                                                                                                                                                                                                         
+'Rzeczywista rola dyspozytora medycznego (jak również Operatora Numeru Alarmowego 112) nie sprowadza się 
+        </p>
+
+        <!-- 2. ODNOŚNIK DO FORMULARZA KONTAKTOWEGO -->
+        <div class="contact-section">
+            <p>Masz pytania, uwagi, pomysł lub chcesz zgłosić błąd w działaniu strony?</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfN2FMiv6YFHxNHFaGeHqvyn7XibyMCDkmC3zI_3T3KuMwNvg/viewform" class="btn-contact">
+                Przejdź do formularza kontaktowego
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>
