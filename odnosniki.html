@@ -62,11 +62,13 @@
             box-shadow: 0 8px 25px rgba(0,0,0,0.1);
         }
 
-        /* Styl miniatury */
+        /* Poprawiony styl miniatury dla logotypów */
         .card-thumb {
             width: 100%;
-            height: 180px;
-            object-fit: cover;
+            height: 160px;
+            object-fit: contain;       /* Zachowuje pełne proporcje bez przycinania */
+            background-color: #f8f9fa; /* Jasne tło uzupełniające wolną przestrzeń */
+            padding: 15px;             /* Bezpieczny margines od krawędzi */
             display: block;
             border-bottom: 1px solid #e1e8ed;
         }
@@ -131,7 +133,7 @@
             }
             
             .card-thumb {
-                height: 200px;
+                height: 140px;
             }
         }
     </style>
@@ -139,7 +141,7 @@
 <body>
 
     <div class="header-section">
-        <h1>Pozostałe pomocne serwisy geolokalizacyjne</h1>
+        <h1>Niezbędnik Dyspozytora</h1>
         <p>Szybki dostęp do zewnętrznych serwisów mapowych i lokalizacyjnych. Kliknij przycisk, aby otworzyć mapę w nowej karcie.</p>
     </div>
 
